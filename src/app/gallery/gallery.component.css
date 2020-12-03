@@ -1,0 +1,16 @@
+*{
+    width: 50%;
+    align-content: middle;
+    text-align: center;
+    color: white;
+    background-color: rgb(31, 30, 30);
+    border: 3px solid red;
+}
+
+img{
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    width: 50%;
+}

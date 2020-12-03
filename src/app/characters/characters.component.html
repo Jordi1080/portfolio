@@ -1,0 +1,20 @@
+<!-- <p *ngIf = "koekje == true; else characters works!">koekje is idd true</p> -->
+<p>koekje is: {{koekje}}</p>
+<div>
+    <!-- {{currentCharacter.name}} ({{currentCharacter.id}})> -->
+</div>
+<label>Huidige geselecteerde character:
+    <div *ngIf="currentCharacter != null">{{currentCharacter.name}}</div> 
+    [class.selected] = ""
+<!-- Mijn character is <input [(ngModel)]="currentCharacter.name" placeholder="name"/> -->
+</label>
+
+<div>
+    <h2>Characters:</h2>
+    <ul class="characters">
+        <li *ngFor="let currentCharacter of characters" (click)=characterClicked(currentCharacter)>
+            <span class="char-id">{{currentCharacter.id}}</span> {{currentCharacter.name}}
+        </li>
+    </ul>
+</div>
+<button class="butt" (click)="doTheThing()">Hello 💀</button>
